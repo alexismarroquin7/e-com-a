@@ -7,10 +7,9 @@
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
     "seed": "knex seed:run",
-    "migrateh": "heroku run knex migrate:latest -a YOUR_HEROKU_APP_NAME_HERE",
-    "rollbackh": "heroku run knex migrate:rollback -a YOUR_HEROKU_APP_NAME_HERE",
-    "databaseh": "heroku pg:psql -a YOUR_HEROKU_APP_NAME_HERE",
-    "seedh": "heroku run knex seed:run -a YOUR_HEROKU_APP_NAME_HERE",
+    "rollbackh": "heroku run knex migrate:rollback -a e-com-a",
+    "databaseh": "heroku pg:psql -a e-com-a",
+    "seedh": "heroku run knex seed:run -a e-com-a",
     "test": "cross-env NODE_ENV=testing jest --watchAll --verbose --runInBand",
     "deploy": "git push heroku main"
   },
@@ -26,6 +25,7 @@
     "helmet": "=4.4.1",
     "knex": "=0.95.3",
     "knex-cleaner": "=1.3.1",
+    "morgan": "^1.10.0",
     "pg": "=8.5.1"
   },
   "devDependencies": {

@@ -118,3 +118,5 @@ dist
 
 .DS_Store
 *.db3
+
+table_schema.md
